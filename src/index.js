@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import CommentBox from './Compoents/CommentBox';
+import Star from './Compoents/Star';
 
 ReactDOM.render(
  
@@ -12,7 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App></App>}/>
       <Route path="/CommentBox" element={<CommentBox/>}/>
-      <Route path='/New' element={<><h1>new</h1></>}/>
+      <Route path='/Star' element={<Star></Star>}/>
     </Routes>
     </HashRouter>
   
