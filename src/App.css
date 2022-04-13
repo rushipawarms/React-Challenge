@@ -1,0 +1,10 @@
+.challenge{
+  border: 0.5rem solid lightgreen;
+  padding: 1rem;
+}
+
+a:hover{
+  background-color: lime;
+  color: black;
+  border: 0.5rem solid black;
+}
