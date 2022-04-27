@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 import CommentBox from './Compoents/CommentBox';
 import Star from './Compoents/Star';
+import TaskBar from './Compoents/TaskBar';
 
 ReactDOM.render(
  
@@ -13,7 +14,11 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App></App>}/>
       <Route path="/CommentBox" element={<CommentBox/>}/>
+      <Route path="/TaskList" element={<TaskBar/>}/>
       <Route path='/Star' element={<Star></Star>}/>
+      <Route path="/FoodApp" element={<h1>FoodApp</h1>}/>
+      <Route path="/EmailBox" element={<h1>EmailBox</h1>}/>
+      <Route path="/GithubRepoComparison" element={<h1>GithubRepoComparison</h1>}/>
     </Routes>
     </HashRouter>
   
