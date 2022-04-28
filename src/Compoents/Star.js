@@ -20,6 +20,7 @@ function Star() {
 
     if(target.classList.contains("star"))
     {
+      
       let n=target.id
       let n1=5-n
       let arr=[]
@@ -41,11 +42,29 @@ function Star() {
   }
   let handleLeave=(e)=>{
     
+    if(final==null)
+    {
       setstar([])
       setUnstar([])
+    }
+   
+   let n=final
+   let n1=5-n
+   let arr=[]
+   let arr1=[]
+   for(let i=1;i<=5;i++)
+   {
+     if(i<=n)
+     {
+       arr.push(i);
+     }
+     else{
+       arr1.push(i)
+     }
+   }
+   setstar(arr);
+   setUnstar(arr1)
       
-    
-    
   
   }
 
