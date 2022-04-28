@@ -8,7 +8,7 @@ function App() {
     <>
    <h1 style={{textAlign:"center"}}>FrontEnd challenges</h1>
     <div style={{display:"flex",justifyContent:"space-evenly",flexWrap:"wrap" ,alignItems:"center", marginTop:"2rem"}}>
-    <NavLink className="challenge" to="/CommentBox">Comment Box</NavLink>
+    {/* <NavLink className="challenge" to="/CommentBox">Comment Box</NavLink> */}
     <NavLink className="challenge"  to="/Star">Star challenge</NavLink>
     <NavLink className="challenge"  to="/TaskList">TaskList</NavLink>
     <NavLink className='challenge' to="/FoodApp">FoodApp</NavLink>
