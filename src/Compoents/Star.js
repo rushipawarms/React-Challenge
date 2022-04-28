@@ -43,7 +43,9 @@ function Star() {
     {
       setstar([])
       setUnstar([])
+
     }
+    
   
   }
 
@@ -72,10 +74,10 @@ function Star() {
     </div>
     <div className="info">Click to set the rating</div>
   
-    {
+    
       
-      final && <div className="smiley-container">{smileys[star.length-1]}</div>
-    }
+      <div className="smiley-container">{smileys[star.length-1]}</div>
+    
   </>
   )
 }
