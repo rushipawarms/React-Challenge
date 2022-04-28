@@ -5,15 +5,16 @@ function Star() {
   const smileys = ["😢", "😞", "😐", "😀", "😎"];
   const[star,setstar]=useState([])
   const[unStar,setUnstar]=useState([])
-  const[final,setFinal]=useState(false)
+  const[final,setFinal]=useState(null)
 
   let handleClick=(e)=>{
 
-    setFinal(true)
-
-
+      setFinal(e.target.id)
+    
   }
   let handleHover=(e)=>{
+
+    
 
     let target=e.target
 
@@ -39,12 +40,11 @@ function Star() {
 
   }
   let handleLeave=(e)=>{
-    if(final==false)
-    {
+    
       setstar([])
       setUnstar([])
-
-    }
+      
+    
     
   
   }
@@ -73,10 +73,7 @@ function Star() {
     }
     </div>
     <div className="info">Click to set the rating</div>
-  
-    
-      
-      <div className="smiley-container">{smileys[star.length-1]}</div>
+    <div className="smiley-container">{smileys[final-1]}</div>
     
   </>
   )
