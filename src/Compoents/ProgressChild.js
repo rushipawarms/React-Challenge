@@ -5,7 +5,9 @@ function ProgressChild({color,Progress}) {
     const parentCSS={
     backgroundColor: "whitesmoke",
     margin: "4rem",
-    borderRadius: "2rem"
+    borderRadius: "2rem",
+    border: "0.1rem black solid"
+   
     }
     const childCSS={
         width: `${Progress}%`,

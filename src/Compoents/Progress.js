@@ -2,8 +2,8 @@ import React,{useState} from 'react'
 import ProgressChild from './ProgressChild'
 
 function Progress() {
-    const [color,setColor]=useState()
-    const[Progress,setProgress]=useState()
+    const [color,setColor]=useState("green")
+    const[Progress,setProgress]=useState(0)
   return (  
       <>
       <div style={{display:"flex", justifyContent:"center",margin:"2rem"}}>
@@ -19,7 +19,7 @@ function Progress() {
         </select>
     </div>
     {
-       color && Progress && <ProgressChild color={color} Progress={Progress}></ProgressChild>
+       <ProgressChild color={color} Progress={Progress}></ProgressChild>
     }
       
       </>
