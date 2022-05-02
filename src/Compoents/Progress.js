@@ -12,6 +12,7 @@ function Progress() {
         <option value="Red">Red</option>
         </select>
         <select value={Progress} onChange={(e)=>setProgress(e.target.value) }>
+        <option value="0">0%</option>
         <option value="25">25%</option>
         <option value="50">50%</option>
         <option value="75">75%</option>
