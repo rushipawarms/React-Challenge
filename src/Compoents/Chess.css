@@ -1,1 +1,12 @@
- 
+ .zero{
+
+    height: 200px;
+    width: 200px;
+ }
+
+ .first{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:0px
+ }

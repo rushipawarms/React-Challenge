@@ -15,7 +15,7 @@ ReactDOM.render(
     <HashRouter>
     <Routes>
       <Route path="/" element={<App></App>}/>
-      <Route path="/Chess" element={<h1> Loading.....</h1>}/>
+      <Route path="/Chess" element={<Chess></Chess>}/>
       <Route path="/CommentBox" element={<h1> Loading.....</h1>}/>
       <Route path="/TaskList" element={<TaskBar/>}/>
       <Route path='/Star' element={<Star></Star>}/>
