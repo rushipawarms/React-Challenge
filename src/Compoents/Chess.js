@@ -11,7 +11,7 @@ export default function Chess() {
   return (
     <div className='zero' ref={inputRef}>
       <form className='first'>
-      <h1>Hello this is for only testing perpose</h1>
+      <h1>Hello this is for only testing perpose do not try at home</h1>
       <input className='second'
         type="text"
         placeholder="Enter Name" 
